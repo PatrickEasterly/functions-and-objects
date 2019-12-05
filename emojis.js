@@ -120,7 +120,9 @@ function isVegitarian(food) {
 const foods = ingredientsArray.map(cook);
 const veggieFoods = foods.filter(isVegitarian);
 
-const theVeggies = ingredientsArray.map(cook).filter(isVegitarian);
+const theVeggies = ingredientsArray
+                                .map(cook)
+                                .filter(isVegitarian);
 
 
 // const foodsArray = Object.values(recipesObj2);
